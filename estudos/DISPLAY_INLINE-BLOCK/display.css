@@ -1,0 +1,35 @@
+.example {
+    color: #FFF;
+    font-size: 20px;
+    text-align: justify; /* distribui os elementos igualmente na linha, menos a ultima linha*/
+}
+
+.example::after {
+    content: '';
+    background-color: #ffff;
+    display: inline-block;
+    width: 100%;
+}
+
+.example-item {
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+}
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+}
+.example-item_third {
+    background-color: #3B97D3;
+}
+
+/*
+.last_line{
+    background-color: #ffff;
+    display: inline-block;
+    width: 100%;
+} */

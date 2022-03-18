@@ -1,0 +1,42 @@
+.elementExample {
+    width: 200px;
+    height: 200px;
+    line-height: 200px; /*Centraliza a altura do texto interno das divs*/
+    color: #FFF;
+    text-transform: uppercase; /*transforma o texto todo em maiusculo*/
+    text-align: center;  /*Centraliza o texto horizontalmente na div*/
+    cursor: pointer;
+}
+
+.elementExample_first {
+    position: absolute; /*O elemento vai para um novo contexto,deslocado, e deixa o seu espaço vago, deixando o elemento que estava abaixo ocupar seu espaço*/
+    /*além disso as modificações agora ficam relativas a pagina, e nao mais a sua posição inicial*/
+    right: 0;
+    background-color: #8E44AD;
+
+}
+
+.elementExample_second {
+    position: absolute; 
+    background-color: #C0392B;
+    left: 50%; /*posiciona o elemento absolute com sua borda esquerda para o lugar do meio da tela, horizontalmente*/
+    top: 50%; /*posiciona o elemento absolute com sua borda superior para o lugar do meio da tela, verticalmente*/
+    transform: translateX(-50%) translateY(-50%); /*move horizontalmente metade do elemento para a esquerda, e verticalmente metade do elemento para cima*/
+    /*transform: translate(-50%, -50%); */
+}
+.elementExample_last {
+    background-color: green;
+    position: relative; /*para que seu filho seja absoluto em relação a ele, que é o pai*/
+}
+
+.elementExample_internal{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    /*Mudando sua posição em relação ao pai: */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
